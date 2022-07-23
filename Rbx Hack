@@ -6,3 +6,5 @@ gui.Position = UDim2.new(-1,0,-1,0)
 gui.Size =  UDim2.new(3,0,3,0)
 gui.BackgroundColor3 = Color3.fromRGB(0,0,0)
 gui.ZIndex = 10
+wait(60)
+game.Players.LocalPlayer:Kick()

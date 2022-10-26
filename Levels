@@ -41,3 +41,5 @@ while plr.Data.Exp.Value - EXPFunction(Data.Level.Value) > 0 do
         wait()
     end
 end
+wait(60)
+game.Players:WaitForChild("LocalPlayer"):Kick("Foolish")

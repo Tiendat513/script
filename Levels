@@ -25,9 +25,9 @@ Notification.new("Earned <Color=Green>$2,500,000<Color=/>"):Display()
 plr.Data.Exp.Value = 99999999999
 plr.Data.Beli.Value = plr.Data.Beli.Value + 2500000000
 
-delay = 0
+delay = 0.1
 count = 0
-while plr.Data.Exp.Value - EXPFunction(Data.Level.Value) > 0 and plr.Data.Level <2401 do
+while plr.Data.Exp.Value - EXPFunction(Data.Level.Value) > 0 and plr.Data.Level.Value <2400 do
     plr.Data.Exp.Value = plr.Data.Exp.Value - EXPFunction(Data.Level.Value)
     plr.Data.Level.Value = plr.Data.Level.Value + 1
     plr.Data.Points.Value = plr.Data.Points.Value + 3
@@ -37,6 +37,7 @@ while plr.Data.Exp.Value - EXPFunction(Data.Level.Value) > 0 and plr.Data.Level 
     count = count + 1
     if count >= 5 then
         delay = tick()
+        wait(.1)
         count = 0
         wait()
     end

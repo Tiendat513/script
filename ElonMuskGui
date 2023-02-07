@@ -1,0 +1,559 @@
+local filename = "ElonMuskHubSetting.txt"
+------------------LoadSetting---------------------------------
+function LoadSetting()
+	print("Loading Setting")
+	local HttpService = game:GetService("HttpService")
+	if (readfile and isfile and isfile(filename)) then
+		_G.Setting = HttpService:JSONDecode(readfile(filename));
+		print("Loaded")
+	end
+end
+LoadSetting()
+
+-------------------SaveSetting-------------------------------
+
+function saveSetting()
+	print("Saving Setting");
+	local json
+	local HttpService = game:GetService("HttpService");
+	if (writefile) then
+		json = HttpService:JSONEncode(_G.Setting);
+		writefile(filename, json);
+	end
+end
+
+--------------------------------------------------------------
+
+local UIS = game:GetService("UserInputService")
+local HACKERLORD = Instance.new("ScreenGui")
+local KeyBackgroud = Instance.new("ImageLabel")
+local UICorner = Instance.new("UICorner")
+local KeyInput = Instance.new("TextBox")
+local UICorner_2 = Instance.new("UICorner")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local KeyText = Instance.new("TextLabel")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local CheckButton = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local WaringText = Instance.new("TextLabel")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local TextLabel = Instance.new("TextLabel")
+local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
+local MainRainbow = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local HackMain = Instance.new("ImageLabel")
+local UICorner_5 = Instance.new("UICorner")
+local Execute = Instance.new("TextButton")
+local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
+local Folder = Instance.new("Folder")
+local Wazure = Instance.new("ImageLabel")
+local Sea = Instance.new("ImageLabel")
+local Table = Instance.new("ImageLabel")
+local Sitink = Instance.new("ImageLabel")
+local HoHo = Instance.new("ImageLabel")
+local Wazure_2 = Instance.new("ImageButton")
+local LowerSet = Instance.new("ImageLabel")
+local LowerSetText = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local AFKMode = Instance.new("ImageLabel")
+local AFKModeText = Instance.new("TextLabel")
+local UICorner_7 = Instance.new("UICorner")
+local Unlock = Instance.new("ImageButton")
+local HoHoTick = Instance.new("ImageButton")
+local Locker = Instance.new("ImageButton")
+local Tick6 = Instance.new("ImageButton")
+local SeaTick = Instance.new("ImageButton")
+local TableTick = Instance.new("ImageButton")
+local SitinkTick = Instance.new("ImageButton")
+local HoHoClose = Instance.new("ImageButton")
+local BestAFK = Instance.new("ImageButton")
+local Low = Instance.new("ImageButton")
+local Unlocker = Instance.new("TextLabel")
+local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
+local UICorner_8 = Instance.new("UICorner")
+local Locker_2 = Instance.new("Frame")
+local LockerText = Instance.new("TextLabel")
+local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local UICorner_9 = Instance.new("UICorner")
+local LockerClose = Instance.new("ImageButton")
+local UnlockClose = Instance.new("ImageButton")
+local WazureClose = Instance.new("ImageButton")
+local SeaClose = Instance.new("ImageButton")
+local TableClose = Instance.new("ImageButton")
+local SitinkClose = Instance.new("ImageButton")
+local BestAFKClose = Instance.new("ImageButton")
+local LowClose = Instance.new("ImageButton")
+local UnlockClose_2 = Instance.new("ImageButton")
+local Script6 = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+HACKERLORD.Name = "ElonMuskHub_Created_by_tiendat513#4985"
+HACKERLORD.Parent = game.CoreGui
+
+KeyBackgroud.Name = "KeyBackgroud"
+KeyBackgroud.Parent = HACKERLORD
+KeyBackgroud.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KeyBackgroud.Position = UDim2.new(0.294755876, 0, 0.186419755, 0)
+KeyBackgroud.Size = UDim2.new(0.410488248, 0, 0.626582265, 0)
+KeyBackgroud.Visible = true
+KeyBackgroud.Image = "http://www.roblox.com/asset/?id=5948819618"
+
+
+UICorner.Parent = KeyBackgroud
+
+KeyInput.Name = "KeyInput"
+KeyInput.Parent = KeyBackgroud
+KeyInput.BackgroundColor3 = Color3.fromRGB(156, 156, 156)
+KeyInput.BackgroundTransparency = 0.500
+KeyInput.Position = UDim2.new(0.0279001463, 0, 0.431500226, 0)
+KeyInput.Size = UDim2.new(0.590308368, 0, 0.136363626, 0)
+KeyInput.Font = Enum.Font.Arcade
+KeyInput.Text = "Input Here"
+KeyInput.TextColor3 = Color3.fromRGB(0, 0, 0)
+KeyInput.TextScaled = true
+KeyInput.TextSize = 14.000
+KeyInput.TextWrapped = true
+
+UICorner_2.Parent = KeyInput
+
+UITextSizeConstraint.Parent = KeyInput
+UITextSizeConstraint.MaxTextSize = 69
+
+KeyText.Name = "KeyText"
+KeyText.Parent = KeyBackgroud
+KeyText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KeyText.BackgroundTransparency = 1.000
+KeyText.BorderSizePixel = 0
+KeyText.Position = UDim2.new(0.0279001463, 0, 0.307370007, 0)
+KeyText.Size = UDim2.new(0.559471369, 0, 0.122322008, 0)
+KeyText.Font = Enum.Font.FredokaOne
+KeyText.Text = "KEY SYSTEM:"
+KeyText.TextColor3 = Color3.fromRGB(255, 255, 255)
+KeyText.TextScaled = true
+KeyText.TextSize = 14.000
+KeyText.TextStrokeTransparency = 0.000
+KeyText.TextTransparency = 0.200
+KeyText.TextWrapped = true
+
+UITextSizeConstraint_2.Parent = KeyText
+UITextSizeConstraint_2.MaxTextSize = 62
+
+CheckButton.Name = "CheckButton"
+CheckButton.Parent = KeyBackgroud
+CheckButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CheckButton.Position = UDim2.new(0.659324527, 0, 0.435440838, 0)
+CheckButton.Size = UDim2.new(0.293685764, 0, 0.12626262, 0)
+CheckButton.Font = Enum.Font.Unknown
+CheckButton.Text = "Check"
+CheckButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+CheckButton.TextScaled = true
+CheckButton.TextSize = 14.000
+CheckButton.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 20)
+UICorner_3.Parent = CheckButton
+
+UITextSizeConstraint_3.Parent = CheckButton
+UITextSizeConstraint_3.MaxTextSize = 64
+
+WaringText.Name = "WaringText"
+WaringText.Parent = KeyBackgroud
+WaringText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WaringText.BackgroundTransparency = 1.000
+WaringText.Position = UDim2.new(0.0279001463, 0, 0.835415959, 0)
+WaringText.Size = UDim2.new(0.942731261, 0, 0.0985160246, 0)
+WaringText.Font = Enum.Font.Creepster
+WaringText.Text = "WARING: Wrong 3 times = ban 1 day"
+WaringText.TextColor3 = Color3.fromRGB(153, 174, 195)
+WaringText.TextScaled = true
+WaringText.TextSize = 14.000
+WaringText.TextWrapped = true
+
+UITextSizeConstraint_4.Parent = WaringText
+UITextSizeConstraint_4.MaxTextSize = 49
+
+UIAspectRatioConstraint.Parent = KeyBackgroud
+UIAspectRatioConstraint.AspectRatio = 1.342
+
+TextLabel.Parent = KeyBackgroud
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.635829687, 0, 0.933931947, 0)
+TextLabel.Size = UDim2.new(0.364170343, 0, 0.0788128227, 0)
+TextLabel.Font = Enum.Font.Unknown
+TextLabel.Text = "Created by: Bing Chilling#5480"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UITextSizeConstraint_5.Parent = TextLabel
+UITextSizeConstraint_5.MaxTextSize = 22
+
+MainRainbow.Name = "MainRainbow"
+MainRainbow.Parent = HACKERLORD
+MainRainbow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainRainbow.Position = UDim2.new(0.268233865, 0, 0.148195028, 0)
+MainRainbow.Size = UDim2.new(0.462754637, 0, 0.728395045, 0)
+MainRainbow.ZIndex = 0
+MainRainbow.Visible = false
+
+UICorner_4.CornerRadius = UDim.new(0, 19)
+UICorner_4.Parent = MainRainbow
+
+UIAspectRatioConstraint_2.Parent = MainRainbow
+UIAspectRatioConstraint_2.AspectRatio = 1.351
+
+HackMain.Name = "HackMain"
+HackMain.Parent = MainRainbow
+HackMain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HackMain.Position = UDim2.new(0.0139077567, 0, 0.0135191074, 0)
+HackMain.Size = UDim2.new(0.9729442, 0, 0.975660086, 0)
+HackMain.Image = "http://www.roblox.com/asset/?id=10997211132"
+
+UICorner_5.CornerRadius = UDim.new(0, 19)
+UICorner_5.Parent = HackMain
+
+Execute.Name = "Execute"
+Execute.Parent = HackMain
+Execute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Execute.Position = UDim2.new(0.535475194, 0, 0.730560601, 0)
+Execute.Size = UDim2.new(0.389558226, 0, 0.130198911, 0)
+Execute.Font = Enum.Font.Unknown
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute.TextScaled = true
+Execute.TextSize = 14.000
+Execute.TextWrapped = true
+
+UITextSizeConstraint_6.Parent = Execute
+UITextSizeConstraint_6.MaxTextSize = 72
+
+Folder.Parent = HackMain
+
+Wazure.Name = "Wazure"
+Wazure.Parent = Folder
+Wazure.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Wazure.Position = UDim2.new(0.0414993316, 0, 0.0614828207, 0)
+Wazure.Size = UDim2.new(0.133868814, 0, 0.18083182, 0)
+Wazure.Image = "http://www.roblox.com/asset/?id=12373275268"
+
+Sea.Name = "Sea"
+Sea.Parent = Folder
+Sea.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Sea.Position = UDim2.new(0.282463193, 0, 0.0614828207, 0)
+Sea.Size = UDim2.new(0.133868814, 0, 0.18083182, 0)
+Sea.Image = "http://www.roblox.com/asset/?id=12373269645"
+
+Table.Name = "Table"
+Table.Parent = Folder
+Table.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Table.Position = UDim2.new(0.558232903, 0, 0.0614828207, 0)
+Table.Size = UDim2.new(0.133868814, 0, 0.18083182, 0)
+Table.Image = "rbxassetid://12384599009"
+
+Sitink.Name = "Sitink"
+Sitink.Parent = Folder
+Sitink.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Sitink.Position = UDim2.new(0.824230254, 0, 0.0614828207, 0)
+Sitink.Size = UDim2.new(0.133868814, 0, 0.18083182, 0)
+Sitink.Image = "rbxassetid://12384655793"
+
+HoHo.Name = "HoHo"
+HoHo.Parent = Folder
+HoHo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HoHo.Position = UDim2.new(0.0441767052, 0, 0.383363485, 0)
+HoHo.Size = UDim2.new(0.133868814, 0, 0.18083182, 0)
+HoHo.Image = "rbxassetid://12376044331"
+
+Wazure_2.Name = "Wazure"
+Wazure_2.Parent = Folder
+Wazure_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Wazure_2.Position = UDim2.new(0.074966535, 0, 0.256781191, 0)
+Wazure_2.Size = UDim2.new(0.0669344068, 0, 0.0904159024, 0)
+Wazure_2.Image = "rbxassetid://12373412646"
+Wazure_2.ScaleType = Enum.ScaleType.Fit
+
+LowerSet.Name = "LowerSet"
+LowerSet.Parent = Folder
+LowerSet.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LowerSet.Position = UDim2.new(0.558232903, 0, 0.383363485, 0)
+LowerSet.Size = UDim2.new(0.133868814, 0, 0.18083182, 0)
+
+LowerSetText.Name = "LowerSetText"
+LowerSetText.Parent = LowerSet
+LowerSetText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LowerSetText.BackgroundTransparency = 1.000
+LowerSetText.Size = UDim2.new(1, 0, 1, 0)
+LowerSetText.Font = Enum.Font.IndieFlower
+LowerSetText.Text = "Lower Setting"
+LowerSetText.TextColor3 = Color3.fromRGB(0, 0, 0)
+LowerSetText.TextScaled = true
+LowerSetText.TextSize = 14.000
+LowerSetText.TextWrapped = true
+
+UICorner_6.Parent = LowerSet
+
+AFKMode.Name = "AFKMode"
+AFKMode.Parent = Folder
+AFKMode.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AFKMode.Position = UDim2.new(0.82463187, 0, 0.383363485, 0)
+AFKMode.Size = UDim2.new(0.133868814, 0, 0.18083182, 0)
+
+AFKModeText.Name = "AFKModeText"
+AFKModeText.Parent = AFKMode
+AFKModeText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AFKModeText.BackgroundTransparency = 1.000
+AFKModeText.Size = UDim2.new(1, 0, 1, 0)
+AFKModeText.Font = Enum.Font.IndieFlower
+AFKModeText.Text = "Best Setting (For AFK)"
+AFKModeText.TextColor3 = Color3.fromRGB(0, 0, 0)
+AFKModeText.TextScaled = true
+AFKModeText.TextSize = 14.000
+AFKModeText.TextWrapped = true
+
+UICorner_7.Parent = AFKMode
+
+Unlock.Name = "Unlock"
+Unlock.Parent = Folder
+Unlock.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Unlock.Position = UDim2.new(0.0749665275, 0, 0.877034307, 0)
+Unlock.Size = UDim2.new(0.0669344068, 0, 0.0904159024, 0)
+Unlock.Image = "rbxassetid://12373412646"
+
+HoHoTick.Name = "HoHoTick"
+HoHoTick.Parent = Folder
+HoHoTick.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HoHoTick.Position = UDim2.new(0.0749665275, 0, 0.576853514, 0)
+HoHoTick.Size = UDim2.new(0.0669344068, 0, 0.0904159024, 0)
+HoHoTick.Image = "rbxassetid://12373412646"
+
+Locker.Name = "Locker"
+Locker.Parent = Folder
+Locker.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Locker.Position = UDim2.new(0.315930396, 0, 0.877034307, 0)
+Locker.Size = UDim2.new(0.0669344068, 0, 0.0904159024, 0)
+Locker.Image = "rbxassetid://12373412646"
+
+Tick6.Name = "Tick6"
+Tick6.Parent = Folder
+Tick6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tick6.Position = UDim2.new(0.315930396, 0, 0.576853514, 0)
+Tick6.Size = UDim2.new(0.0669344068, 0, 0.0904159024, 0)
+Tick6.Image = "rbxassetid://12373412646"
+
+SeaTick.Name = "SeaTick"
+SeaTick.Parent = Folder
+SeaTick.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SeaTick.Position = UDim2.new(0.315930396, 0, 0.256781191, 0)
+SeaTick.Size = UDim2.new(0.0669344068, 0, 0.0904159024, 0)
+SeaTick.Image = "rbxassetid://12373412646"
+
+TableTick.Name = "TableTick"
+TableTick.Parent = Folder
+TableTick.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TableTick.Position = UDim2.new(0.591700137, 0, 0.256781191, 0)
+TableTick.Size = UDim2.new(0.0669344068, 0, 0.0904159024, 0)
+TableTick.Image = "rbxassetid://12373412646"
+
+SitinkTick.Name = "SitinkTick"
+SitinkTick.Parent = Folder
+SitinkTick.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SitinkTick.Position = UDim2.new(0.858099103, 0, 0.256781191, 0)
+SitinkTick.Size = UDim2.new(0.0669344068, 0, 0.0904159024, 0)
+SitinkTick.Image = "rbxassetid://12373412646"
+
+HoHoClose.Name = "HoHoClose"
+HoHoClose.Parent = Folder
+HoHoClose.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HoHoClose.Position = UDim2.new(0.074966535, 0, 0.576853514, 0)
+HoHoClose.Size = UDim2.new(0.0669344068, 0, 0.0904159024, 0)
+HoHoClose.Visible = false
+HoHoClose.Image = "rbxassetid://12373414292"
+HoHoClose.ScaleType = Enum.ScaleType.Fit
+
+BestAFK.Name = "BestAFK"
+BestAFK.Parent = Folder
+BestAFK.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestAFK.Position = UDim2.new(0.858099103, 0, 0.576853514, 0)
+BestAFK.Size = UDim2.new(0.0669344068, 0, 0.0904159024, 0)
+BestAFK.Image = "rbxassetid://12373412646"
+
+Low.Name = "Low"
+Low.Parent = Folder
+Low.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Low.Position = UDim2.new(0.591700137, 0, 0.576853514, 0)
+Low.Size = UDim2.new(0.0669344068, 0, 0.0904159024, 0)
+Low.Image = "rbxassetid://12373412646"
+
+Unlocker.Name = "Unlocker"
+Unlocker.Parent = Folder
+Unlocker.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Unlocker.Position = UDim2.new(0.0441767052, 0, 0.679927647, 0)
+Unlocker.Size = UDim2.new(0.133868814, 0, 0.18083182, 0)
+Unlocker.Font = Enum.Font.Unknown
+Unlocker.Text = "Unlocker (120fps)"
+Unlocker.TextColor3 = Color3.fromRGB(0, 0, 0)
+Unlocker.TextScaled = true
+Unlocker.TextSize = 14.000
+Unlocker.TextWrapped = true
+
+UITextSizeConstraint_7.Parent = Unlocker
+UITextSizeConstraint_7.MaxTextSize = 72
+
+UICorner_8.Parent = Unlocker
+
+Locker_2.Name = "Locker"
+Locker_2.Parent = Folder
+Locker_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Locker_2.Position = UDim2.new(0.282463163, 0, 0.679927647, 0)
+Locker_2.Size = UDim2.new(0.133868814, 0, 0.18083182, 0)
+
+LockerText.Name = "LockerText"
+LockerText.Parent = Locker_2
+LockerText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LockerText.BackgroundTransparency = 1.000
+LockerText.Position = UDim2.new(-1.1920929e-07, 0, 0, 0)
+LockerText.Size = UDim2.new(1, 0, 1, 0)
+LockerText.ZIndex = 7
+LockerText.Font = Enum.Font.Unknown
+LockerText.Text = "Locker (20fps)"
+LockerText.TextColor3 = Color3.fromRGB(0, 0, 0)
+LockerText.TextScaled = true
+LockerText.TextSize = 14.000
+LockerText.TextWrapped = true
+
+UITextSizeConstraint_8.Parent = LockerText
+UITextSizeConstraint_8.MaxTextSize = 86
+
+UIAspectRatioConstraint_3.Parent = LockerText
+
+UICorner_9.Parent = Locker_2
+
+LockerClose.Name = "LockerClose"
+LockerClose.Parent = Folder
+LockerClose.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LockerClose.Position = UDim2.new(0.315930396, 0, 0.877034366, 0)
+LockerClose.Size = UDim2.new(0.0669344068, 0, 0.0904159024, 0)
+LockerClose.Visible = false
+LockerClose.Image = "rbxassetid://12373414292"
+LockerClose.ScaleType = Enum.ScaleType.Fit
+
+UnlockClose.Name = "UnlockClose"
+UnlockClose.Parent = Folder
+UnlockClose.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UnlockClose.Position = UDim2.new(0.074966535, 0, 0.877034366, 0)
+UnlockClose.Size = UDim2.new(0.0669344068, 0, 0.0904159024, 0)
+UnlockClose.Visible = false
+UnlockClose.Image = "rbxassetid://12373414292"
+UnlockClose.ScaleType = Enum.ScaleType.Fit
+
+WazureClose.Name = "WazureClose"
+WazureClose.Parent = Folder
+WazureClose.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WazureClose.Position = UDim2.new(0.074966535, 0, 0.256781191, 0)
+WazureClose.Size = UDim2.new(0.0669344068, 0, 0.0904159024, 0)
+WazureClose.Visible = false
+WazureClose.Image = "rbxassetid://12373414292"
+WazureClose.ScaleType = Enum.ScaleType.Fit
+
+SeaClose.Name = "SeaClose"
+SeaClose.Parent = Folder
+SeaClose.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SeaClose.Position = UDim2.new(0.315930396, 0, 0.256781191, 0)
+SeaClose.Size = UDim2.new(0.0669344068, 0, 0.0904159024, 0)
+SeaClose.Visible = false
+SeaClose.Image = "rbxassetid://12373414292"
+SeaClose.ScaleType = Enum.ScaleType.Fit
+
+TableClose.Name = "TableClose"
+TableClose.Parent = Folder
+TableClose.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TableClose.Position = UDim2.new(0.591700137, 0, 0.256781191, 0)
+TableClose.Size = UDim2.new(0.0669344068, 0, 0.0904159024, 0)
+TableClose.Visible = false
+TableClose.Image = "rbxassetid://12373414292"
+TableClose.ScaleType = Enum.ScaleType.Fit
+
+SitinkClose.Name = "SitinkClose"
+SitinkClose.Parent = Folder
+SitinkClose.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SitinkClose.Position = UDim2.new(0.856760383, 0, 0.256781191, 0)
+SitinkClose.Size = UDim2.new(0.0669344068, 0, 0.0904159024, 0)
+SitinkClose.Visible = false
+SitinkClose.Image = "rbxassetid://12373414292"
+SitinkClose.ScaleType = Enum.ScaleType.Fit
+
+BestAFKClose.Name = "BestAFKClose"
+BestAFKClose.Parent = Folder
+BestAFKClose.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestAFKClose.Position = UDim2.new(0.856760383, 0, 0.576853514, 0)
+BestAFKClose.Size = UDim2.new(0.0669344068, 0, 0.0904159024, 0)
+BestAFKClose.Visible = false
+BestAFKClose.Image = "rbxassetid://12373414292"
+BestAFKClose.ScaleType = Enum.ScaleType.Fit
+
+LowClose.Name = "LowClose"
+LowClose.Parent = Folder
+LowClose.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LowClose.Position = UDim2.new(0.591700137, 0, 0.576853514, 0)
+LowClose.Size = UDim2.new(0.0669344068, 0, 0.0904159024, 0)
+LowClose.Visible = false
+LowClose.Image = "rbxassetid://12373414292"
+LowClose.ScaleType = Enum.ScaleType.Fit
+
+UnlockClose_2.Name = "UnlockClose"
+UnlockClose_2.Parent = Folder
+UnlockClose_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UnlockClose_2.Position = UDim2.new(0.315930396, 0, 0.576853514, 0)
+UnlockClose_2.Size = UDim2.new(0.0669344068, 0, 0.0904159024, 0)
+UnlockClose_2.Visible = false
+UnlockClose_2.Image = "rbxassetid://12373414292"
+UnlockClose_2.ScaleType = Enum.ScaleType.Fit
+
+Script6.Name = "Script6"
+Script6.Parent = Folder
+Script6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Script6.Position = UDim2.new(0.282463193, 0, 0.383363485, 0)
+Script6.Size = UDim2.new(0.133868814, 0, 0.18083182, 0)
+Script6.Image = "rbxassetid://12387707196"
+
+UIAspectRatioConstraint_4.Parent = HackMain
+UIAspectRatioConstraint_4.AspectRatio = 1.351
+
+-- Scripts:
+
+local function NGKQEA_fake_script() -- MainRainbow.Rainbow 
+	local script = Instance.new('Script', MainRainbow)
+
+	
+	local speed = 0.05 
+	local part = script.Parent
+	
+	
+	
+	function zz(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	count = 0
+	
+	while wait(speed)do
+		part.BackgroundColor3 = Color3.fromHSV(zz(count),1,1)
+	
+		
+		count = count + 0.01
+	end
+end
+coroutine.wrap(NGKQEA_fake_script)()
+
+UIS.InputBegan:Connect(function(Key,IsTyping)
+	if IsTyping then return end
+	if Key.KeyCode == Enum.KeyCode.RightShift then
+	HACKERLORD.Enabled = false
+	end
+end)

@@ -551,9 +551,17 @@ local function NGKQEA_fake_script() -- MainRainbow.Rainbow
 end
 coroutine.wrap(NGKQEA_fake_script)()
 
+Toggle = 0
 UIS.InputBegan:Connect(function(Key,IsTyping)
+
 	if IsTyping then return end
 	if Key.KeyCode == Enum.KeyCode.RightShift then
-	HACKERLORD.Enabled = false
-	end
+		if Toggle == 1 then
+			Toggle = 0
+			HACKERLORD.Enabled = false
+		else
+			Toggle = 1
+			HACKERLORD.Enabled = true
+		end	
+end
 end)
